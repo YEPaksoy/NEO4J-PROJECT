@@ -23,11 +23,11 @@ Tech Stack
 Graph Model (Suggested)
 -----------------------
 Nodes:
-- Request   (id, status, createdDate, closedDate, resolutionHours)
-- Agency    (code, name)
-- Complaint (type, descriptor)
-- Borough   (name)
-- Location  (address, zip, lat, lon)
+- Request   (Unique Key, status, createdDate, closedDate, resolutionHours)
+- Agency    (Unique Key, code, name)
+- Complaint (Unique Key, type, descriptor)
+- Borough   (Unique Key,name)
+- Location  (Unique Key, address, zip, lat, lon)
 
 Relationships:
 - (Request)-[:BY_AGENCY]->(Agency)
